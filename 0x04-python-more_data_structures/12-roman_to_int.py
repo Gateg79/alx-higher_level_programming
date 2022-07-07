@@ -1,4 +1,5 @@
-haracter):
+#!/usr/bin/python3
+def roman_value(prmCharacter):
     roman_list = [('I', 1), ('V', 5), ('X', 10),
                   ('L', 50), ('C', 100), ('D', 500), ('M', 1000)]
     for item in roman_list:
@@ -30,4 +31,4 @@ def roman_to_int(roman_string):
         else:
             result += (nextValue - currentValue)
             next(enum)
-    return result 
+    return result
