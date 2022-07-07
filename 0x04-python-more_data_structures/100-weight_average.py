@@ -1,4 +1,5 @@
-ght_average(my_list=[]):
+#!/usr/bin/python3
+def weight_average(my_list=[]):
     average = 0
     totalWeight = 0
     totalScore = 0
