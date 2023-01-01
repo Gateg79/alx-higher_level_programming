@@ -8,7 +8,7 @@ request(starWarsUrl, function (_err, _res, body) {
   body = JSON.parse(body).results;
 
   for (let i = 0; i < body.length; ++i) {
-    const characters = body[i],characters;
+    const characters = body[i].characters;
 
     for (let j = 0; j < characters.length; ++j) {
       const character = characters[j];
