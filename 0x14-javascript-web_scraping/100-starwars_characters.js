@@ -3,6 +3,7 @@
 const request = require('request');
 const film = process.argv[2];
 let url = 'https://swapi-api.alx-tools.com/api/people/';
+
 function filmcharacters (film, url) {
   request(url, function (err, response, body) {
     if (err) {
@@ -25,5 +26,5 @@ function filmcharacters (film, url) {
     }
   });
 }
-filmcharacters(film, url);
+filmcharacters (film, url);
 
