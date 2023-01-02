@@ -2,9 +2,9 @@
 
 const request = require('request');
 
-request(process.argv[2], function (_err, _res, body) {
-  if (_err) {
-    console.log(_err);
+request(process.argv[2], function (err, _res, body) {
+  if (err) {
+    console.log(err);
   } else {
     const completedUserTask = {};
     body = JSON.parse(body);
@@ -13,7 +13,7 @@ request(process.argv[2], function (_err, _res, body) {
       const userId = body[i].userId;
       const completed = body[i].completed;
 
-      if (completed && !completedUserTask[userId] {
+      if (completed && !completedUserTask[userId]) {
         completedUserTask[userId] = 0;
       }
 
